@@ -1,12 +1,9 @@
 a = int(input("Enter a: "))
 
+count = (a + 1) // 2
 series = []
-for i in range(a):
+for i in range(count):
     num = 2 * i + 1
-    # Only add numbers less than or equal to 2*a - 1 and less than 10
-    if num < 10:
-        series.append(str(num))
-    else:
-        break
+    series.append(str(num))
 
 print(", ".join(series))
