@@ -6,7 +6,11 @@ def count_multiples(numbers):
                 multiples_count[i] += 1
     return multiples_count
 
-# Example usage:
-input_list = [1, 2, 8, 9, 12, 46, 76, 82, 15, 20, 30]
-output_dict = count_multiples(input_list)
-print(output_dict)
+if __name__ == "__main__":
+    try:
+        numbers = [1, 2, 8, 9, 12, 46, 76, 82, 15, 20, 30]
+        # numbers = list(map(int, input("Enter numbers (space-separated): ").split()))
+        result = count_multiples(numbers)
+        print("Multiples count:", result)
+    except Exception as e:
+        print("Error:", e)
