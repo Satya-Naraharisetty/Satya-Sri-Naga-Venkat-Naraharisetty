@@ -1,4 +1,9 @@
 def series_of_odd_numbers(n):
+    # series = []
+    # for i in range(n):
+    #     num = 2 * i + 1
+    #     series.append(num)
+    # return series
     return [2 * i + 1 for i in range(n)]
 
 if __name__ == "__main__":
