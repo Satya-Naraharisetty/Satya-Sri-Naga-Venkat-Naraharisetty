@@ -1,6 +1,6 @@
-def count_multiples(numbers):
+def count_multiples(num_array):
     multiples_count = {i: 0 for i in range(1, 10)}
-    for num in numbers:
+    for num in num_array:
         for i in range(1, 10):
             if num % i == 0:
                 multiples_count[i] += 1
