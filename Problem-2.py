@@ -1,9 +1,9 @@
-a = int(input("Enter a: "))
+def series_of_odd_numbers(n):
+    return [2 * i + 1 for i in range(n)]
 
-# series = []
-# for i in range(a):
-#     series.append(str(2 * i + 1))
-
-series = [str(2 * i + 1) for i in range(a)]
-
-print(", ".join(series))
+if __name__ == "__main__":
+    try:
+        a = int(input("Enter a: "))
+        print(", ".join(map(str, series_of_odd_numbers(a))))
+    except Exception as e:
+        print("Error:", e)
